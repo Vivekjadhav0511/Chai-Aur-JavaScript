@@ -29,4 +29,3 @@ console.log(typeof undefined); // Undefined
 
 // ___---- NON-PRIMATIVE DATATYPES ------___________________________________________________________________
 
-
