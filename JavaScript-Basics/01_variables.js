@@ -10,7 +10,7 @@ accountCity= 'Yavatmal'  // if We not Declare Variable in JavaScript Automatical
 
 let accountState;
 
-// accountId=5          // Const Not Changable 
+// accountId=5          // Const Not Changable ** And We Have To Declare And Intilize Value In Same Line In Const
 
 accountEmail="accountEmail@333"
 
