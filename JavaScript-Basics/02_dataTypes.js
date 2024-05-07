@@ -1,5 +1,7 @@
 "use strict"; // treat All js Code as Newer Version 
 
+// JavaScript is " Dynamically Typed " Means Interpriter assign variable type on the basis of variable Value At Run Time
+
 console.log
 ('Vivek')  // Code Readablity is High Priority  
 
@@ -7,17 +9,34 @@ console.log
 
 let Name="Vivek" // String " " , ' ' 
 
-let age=18;  // number
+let age=18;  // number 
+
+let ScoreValue=100.30  // Number 
 
 let isLoggedIn=false // Boolean  true OR False
 
 // bitInt 
 
+const bigNumber = 344689741578434878451676864344n
+
+
+console.log(bigNumber,typeof bigNumber)  // 344689741578434878451676864344n bigint
+
 // null => StandAlone Value   given BY User 
+
+let outSideTemp        
+
+console.log(outSideTemp,"outSideTemp")
 
 // Undefinend => Given By Js engine
 
 // symbol => Unique
+
+const id = Symbol ('123')
+
+const anotherID= Symbol('123')
+
+console.log(id==anotherID , ' Id === anotherID')  // False Because Return Value Is Different 
 
 console.log(Name,typeof(Name));  /// Vivek string
 
@@ -47,5 +66,27 @@ console.log(Str2); // 200   It Means In Primitive DataType Original Value Never 
 console.log(Str1);
 
 
+
 // ___---- NON-PRIMATIVE DATATYPES ------{ Referance }  it Allocate a Referance of value In Memory _________________
 
+//  Array , Object , Function
+
+let heros = ["shaktiman",'naagraj','Doremon','gabbarSing',]
+
+console.log(heros)
+
+let Obj={
+    name:"Vivek",
+    age:22,
+    city:"Yavatmal"
+}
+
+console.log(Obj)
+
+let MyFunction=function(){
+    console.log("Hello World");  // Function Declaraction
+}
+
+MyFunction()
+
+console.log(typeof MyFunction);  // Return Function We Called It AS  Function Onject
