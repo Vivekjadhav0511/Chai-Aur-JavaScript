@@ -30,7 +30,7 @@ console.log(game);
 let user1={
     email:"User@gmail.com",
     number:554436646,
-    upi:"Chai@ybl"       // Array Non-Primitive Goes Inside Heap
+    upi:"Chai@ybl"       // Array & Object is Non-Primitive Goes Inside Heap
 }
 
 let userTwo = user1
