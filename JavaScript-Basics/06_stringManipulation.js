@@ -76,7 +76,11 @@ console.log(FullName.toLocaleLowerCase()); // vivek manoj jadhav
 
 console.log(FullName.length);  // 18 Lenght
 
-console.log(FullName.trim());
+let trimExample = "    TrimKaro   "
+
+console.log(trimExample.trim());
+
+
 
 console.log(FullName.split("")); // Split The string Into A SubString And  Return INto A Array /* ['V', 'i', 'v', 'e', 'k', ' ', 'M', 'a', 'n', 'o', 'j', ' ', 'J', 'a', 'd', 'h', 'a', 'v'] */ 
 
@@ -92,7 +96,7 @@ console.log(FullName.lastIndexOf());
 
 console.log(FullName.substring(0, 5)); // Vivek It Gives The Substing takes a Start index And End Index And Last Value dosen't count 
 
-console.log(FullName.slice(0, 5));  // Takes A Start Index And Number Of Character We Want 
+console.log(FullName.slice(0, 5));  // Takes A Start Index And Number Of Character We Want & Also takes a Negative Value 
 
 console.log(FullName.indexOf("k")); // Gives A Index Value Of Character Start from A 0th Value...
 
@@ -118,3 +122,16 @@ console.log(FullName.matchAll("ViveK"));
 let SpreedString = "Spread The String"
 
 console.log(...SpreedString.split(''));
+
+console.log();
+
+let trimExamplee = "     TirmKaro  "  // Remove White Spaces At The end Of the String And Start Of the String 
+
+console.log(trimExamplee.length,trimExamplee);
+
+console.log(trimExamplee.trim().length,trimExamplee);
+
+console.log(trimExamplee.length,trimExamplee.trimStart(),trimExamplee,trimExamplee.length);
+
+
+                                 
