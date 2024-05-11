@@ -133,5 +133,15 @@ console.log(trimExamplee.trim().length,trimExamplee);
 
 console.log(trimExamplee.length,trimExamplee.trimStart(),trimExamplee,trimExamplee.length);
 
+let url="https://vivekjadhav.com/Jadhav%20Vivek"
 
-                                 
+console.log(url.replace("%20","_"));
+
+console.log(url.includes("%20"));  // True  => Return The Value In if character is present "true" otherwise "False" 
+
+console.log(url);
+
+let GameNaMe = "pubg-FireFire-Ludo-candyCrush"
+
+console.log(GameNaMe.split("-"),GameNaMe); // Takes a Seperator And Limit => Convert String Into A Array On the Basis Of the Separator                    
+
