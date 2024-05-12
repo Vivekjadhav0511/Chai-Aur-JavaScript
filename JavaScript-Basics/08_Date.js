@@ -26,7 +26,7 @@ console.log(myCreatedDate.toISOString());
 
 console.log(myCreatedDate.toDateString());
 
-  
+console.log(myCreatedDate.getDate());
 
 
 
