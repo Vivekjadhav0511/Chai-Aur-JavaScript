@@ -22,3 +22,43 @@ console.log(accountId);
 
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
 
+// ********** VAR ****************
+
+var Name = "vivek Jadhav"  // Var => var Redeclare And Reinitialization 
+
+console.log(Name); 
+
+console.log(Name); 
+
+ var Name = "Tushar Jadhav"
+
+ Name = "Arati Jadhav"
+
+ console.log(Name);
+
+//  ************* LET *************************
+
+let Game = "ludo"
+
+console.log(Game); 
+
+Game = "CandyCrush"
+
+console.log(Game); 
+ 
+// let Game = " FreeFire"  // SyntaxError: Identifier 'Game' has already been declared
+
+console.log(Game); // Let => We can't Redeclare bt We can Reinitiliazation
+
+
+// ************** Const ************************
+
+
+const Score = 5555
+
+console.log(Score);
+
+// Score = 0000   // TypeError: Assignment to constant variable.
+
+console.log(Score); // Const => we Can't Redeclare & we can't Reinitiliazation And In Const declaration & initiliazation is must Be In Same Line 
+ 
