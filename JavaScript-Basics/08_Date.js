@@ -25,6 +25,8 @@ console.log(myCreatedDate.toString()); // Sat Jun 25 2022 00:00:00 GMT+0530 (Ind
 console.log(myCreatedDate.toISOString());
 
 console.log(myCreatedDate.toDateString());
+console.log(myCreatedDate.toDateString());
+console.log(myCreatedDate.toDateString());
   
 
 
