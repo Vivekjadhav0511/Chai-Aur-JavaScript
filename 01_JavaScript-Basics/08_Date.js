@@ -59,7 +59,6 @@ console.log(currentDate); // 1715530573183   in MiliSecond
 
 console.log(currentDate == Date.now()); // True => In MIlisecond 
 
-
 // **********************
 
 let newDate = new  Date()
