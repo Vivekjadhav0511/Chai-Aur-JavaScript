@@ -61,7 +61,6 @@ console.log(gameName.length);
 
 console.log(gameName);
 
-
 let FullName = "Vivek Manoj Jadhav"
 
 console.log(FullName);
@@ -80,11 +79,7 @@ let trimExample = "    TrimKaro   "
 
 console.log(trimExample.trim());
 
-
-
 console.log(FullName.split("")); // Split The string Into A SubString And  Return INto A Array /* ['V', 'i', 'v', 'e', 'k', ' ', 'M', 'a', 'n', 'o', 'j', ' ', 'J', 'a', 'd', 'h', 'a', 'v'] */ 
-
-// console.log(FullName.replace( , tushar));
 
 console.log(FullName.charAt(5)); // Return The Character presnt At The Given index Value 
 
@@ -101,14 +96,6 @@ console.log(FullName.slice(0, 5));  // Takes A Start Index And Number Of Charact
 console.log(FullName.indexOf("k")); // Gives A Index Value Of Character Start from A 0th Value...
 
 console.log(FullName.toString());
-
-let Score = "55555"
-
-let NewScore = Number(Score)
-
-console.log(Score, typeof (Score)); // 55555 string
-
-console.log(NewScore, typeof (NewScore)); // 55555 'number'
 
 console.log(FullName.replace("Vivek", "Tushar"));  // Tushar Manoj Jadhav  Replace The String "Vivek " With "Tushar"
 
