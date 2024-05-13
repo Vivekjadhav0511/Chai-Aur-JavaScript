@@ -91,7 +91,7 @@ console.log(FullName.concat(" From Yavatmal")); // Vivek Manoj Jadhav From Yavat
 
 console.log(FullName.lastIndexOf());
 
-console.log(FullName.substring(0, 5)); // Vivek It Gives The Substing takes a Start index And End Index And Last Value dosen't count 
+console.log(FullName.substring(0, 5)); // Vivek = It Gives The Substing takes a Start index And End Index And Last Value dosen't count 
 
 console.log(FullName.slice(0, 5));  // Takes A Start Index And Number Of Character We Want & Also takes a Negative Value 
 
