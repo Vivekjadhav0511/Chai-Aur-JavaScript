@@ -1,5 +1,7 @@
 // ************STRING***************************************************
 
+// a sequence of characters enclosed within single (' ') or double (" ") quotation marks. For example:
+
 // Another Way To Declare A String 
 
 let Str = new String("New String")
