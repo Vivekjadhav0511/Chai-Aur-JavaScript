@@ -19,16 +19,13 @@ let isLoggedIn=false // Boolean  true OR False
 
 const bigNumber = 344689741578434878451676864344n
 
-
 console.log(bigNumber,typeof bigNumber)  // 344689741578434878451676864344n bigint
 
 // null => StandAlone Value   given BY User 
 
 let outSideTemp        
 
-console.log(outSideTemp,"outSideTemp")
-
-// Undefinend => Given By Js engine
+console.log(outSideTemp,"outSideTemp") // // Undefinend => Given By Js engine
 
 // symbol => Unique
 
@@ -75,6 +72,15 @@ let heros = ["shaktiman",'naagraj','Doremon','gabbarSing',]
 
 console.log(heros)
 
+console.log(heros[0],"o'th Position");
+
+// heros.push = "Kaliyaa"
+
+console.log( heros.push='kaliyaa' ,heros);
+
+console.log(heros);  // Array =>
+    //Non-primitive dataType Passses The Referance of the Variable that's why it also changes a Origial array Also & It Store Inside a Heap Memory
+
 let Obj={
     name:"Vivek",
     age:22,
@@ -89,4 +95,4 @@ let MyFunction=function(){
 
 MyFunction()
 
-console.log(typeof MyFunction);  // Return Function We Called It AS  Function Onject
+console.log(typeof MyFunction);  // Return Function We Called It AS  Function Object
