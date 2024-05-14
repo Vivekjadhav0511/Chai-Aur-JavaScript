@@ -60,13 +60,6 @@ console.log("Splice Array", SpliceArray);
 console.log("Original Array",games);
 
 
-
-// let FullName = "Vivek Manoj Jadhav"
-
-// console.log(FullName.toString() ,typeof(FullName));
-
-
-
 //  Q. make New Array That doesn't Contain a Repeated Value ***
 
 let arr = [1,1,5,5,8,88,77,77,66,77]
