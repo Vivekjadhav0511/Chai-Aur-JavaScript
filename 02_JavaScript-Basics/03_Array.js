@@ -53,7 +53,7 @@ console.log(Array.of(score1,score2,score3)); // [ 100, 200, 300 ]
 
     //   ****** DATE **********
 
-let date = new Date(2022,05,13)
+// let date = new Date(2022,05,13)
 
 // console.log(date.getTime()/1000);
 
