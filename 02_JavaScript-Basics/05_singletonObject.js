@@ -2,6 +2,8 @@
 
 let tinderUSer = new Object()
 
+// let tinderUSer ={}
+
 console.log(tinderUSer);  // {}  => Empty Object
 
 tinderUSer.id = "123abc"
@@ -87,5 +89,21 @@ console.log(tinderUSer.hasOwnProperty("isloggedIn"));
 
 console.log(this); // {}  => this represnt the currunt scope 
 
+
+
 // ********Object destructureing*******************
+
+const course = {
+    courseName:"JavaScript",
+    cousrePrice:999,
+    courseInstructor:"Hitesh"
+}
+
+// console.log(course.courseInstuctor);
+
+const {courseInstructor: teacher,courseName,cousrePrice} = course
+
+console.log(cousrePrice ,typeof(cousrePrice)); //  999 number
+console.log(courseName); // JavaScript
+console.log(teacher); // Hitesh
 
