@@ -57,7 +57,7 @@ console.log(loginuserMessage('Vivek'));
 // console.log(loginuserMessage(""));
 
 
-// **********************
+// ***** --- rest operator ---*****************
 
 function calculateCartPrice(val1,val2,...num){ // rest operator
 
@@ -67,6 +67,8 @@ function calculateCartPrice(val1,val2,...num){ // rest operator
 
 console.log(calculateCartPrice(100,200,300,400));
 
+
+// ***** Take a Object a Argument ************
 
 let user ={
     name:"vivek",
@@ -78,14 +80,18 @@ function handleObject(anyObject){
 console.log(`${anyObject.name} and email id is ${anyObject.email}`);
 
 }
-
 handleObject(user) // vivek and email id is vivekjadhav@gmail.com
+
+
+// *********** Take a Object as Argument ---------
 
 handleObject({
     name:"vivek",
     email:"vivekjadhav@gmail.com"  // vivek and email id is vivekjadhav@gmail.com
 }
 )
+
+// ****  Take a Array as Argument*******************
 
 const myNewArray = [200,500,700,900,400,600,3500]
 
@@ -98,4 +104,12 @@ function returnSecondValue(getArray){
 console.log(returnSecondValue(myNewArray)); // 200 
 
 
+
+function returnArray(getArray){
+
+    return getArray[0] 
+
+}
+
+console.log(returnArray([10,20,30,40,50])); // 2
 
