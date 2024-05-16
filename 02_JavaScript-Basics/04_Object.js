@@ -4,6 +4,8 @@
 
 // Object  Literals 
 
+let Obj5= new Object()
+
 let mySym = Symbol("use Me")
 
 const user ={

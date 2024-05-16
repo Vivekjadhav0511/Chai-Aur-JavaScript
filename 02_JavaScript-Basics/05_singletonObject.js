@@ -1,6 +1,6 @@
 
 
-let tinderUSer = new Object()
+let tinderUSer = new Object()  // SingleTon  object constructor
 
 // let tinderUSer ={}
 
@@ -14,7 +14,7 @@ tinderUSer.isloggedIn = " true"
 
 console.log(tinderUSer);  // { id: '123abc', Name: 'Sam', isloggedIn: ' true' }
 
-const regularUser = {
+const regularUser = {  // 
     email:"vivekjadhva@gmail.com",
     fullName:{
           userFullName:{
@@ -106,4 +106,13 @@ const {courseInstructor: teacher,courseName,cousrePrice} = course
 console.log(cousrePrice ,typeof(cousrePrice)); //  999 number
 console.log(courseName); // JavaScript
 console.log(teacher); // Hitesh
+
+
+// ***--- API --------- ******************
+
+// {
+//     "courseName": "JavaScript",
+//     "cousrePrice":999,
+//     "courseInstructor":"Hitesh"
+// }
 
