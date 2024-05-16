@@ -35,7 +35,7 @@ console.log(flatArray); // [1001, 1002, 1003,5001, 5002, 5003, 1004, 3001, 3002,
 
 console.log(Array.isArray(marvalHeros)); // True 
 
-let FormArry= Array.from("Vivek");
+let FormArry= Array.from("Vivek"); // Creates an array from an iterable object.
 
 console.log(FormArry,Array.isArray(FormArry)); // [ 'V', 'i', 'v', 'e', 'k' ] true
 
