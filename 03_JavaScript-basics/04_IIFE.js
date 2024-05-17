@@ -1,5 +1,6 @@
 
 // Immediate invoke function Expression { IIFE }
+
 (function IIFE(){ 
     // Named IFFE 
     console.log("immidiate Invoke Function Expression "); // protection Form A global Scope Polluction 
