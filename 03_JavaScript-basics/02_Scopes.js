@@ -22,3 +22,26 @@ if (true) {  // Scope
 console.table(b)  // 20
 console.table(cc)  //  Uncaught ReferenceError: cc is not defined
 
+*****************
+
+   function call (){
+    console.log(this);
+    let UserName = "vivek"
+}
+// call()
+
+let callMe = function(){
+    // let UserName = "vivek"
+    console.log(this);
+}
+// callMe()
+
+let arrow = ()=>{
+    console.log(this);
+}
+arrow() // {}
+
+function Fun(){
+    console.log(this);
+}
+Fun()
