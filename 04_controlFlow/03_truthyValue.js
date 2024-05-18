@@ -38,3 +38,4 @@ console.log(0 == ''); // true
 
 console.log(true == 0); // false 
 
+// Nullish Cool
