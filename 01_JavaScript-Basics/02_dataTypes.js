@@ -1,13 +1,13 @@
 "use strict"; // treat All js Code as Newer Version 
 
 // JavaScript is " Dynamically Typed " Means Interpriter assign variable type on the basis of variable Value At Run Time
-
+  
 console.log
 ('Vivek')  // Code Readablity is High Priority  
 
 // ___---- PRIMATIVE DATATYPES ------___________________________________________________________________
 
-let Name="Vivek" // String " " , ' ' 
+let Name="Vivek" // String " " , ' '  string is primitive dateType it's a Sequence of character
 
 let age=18;  // number 
 
