@@ -85,6 +85,7 @@ let numStr = "100000"
 console.log(numStr,typeof(numStr)); // / 100000 string
 let toNumber = Number(numStr)
 console.log(toNumber,typeof(toNumber));  // 100000 number
+
 /* In this example, the string "10000" is explicitly converted to an integer using the Number() function. */
 
 
@@ -94,9 +95,9 @@ console.log(toNumber,typeof(toNumber));  // 100000 number
 // Type coercion, on the other hand, is the automatic conversion of data types during operations.
 
 let carNumber = 777
-console.log(carNumber,typeof(carNumber));
+console.log(carNumber,typeof(carNumber)); // 777 "number"
 let myCar = `i have A car With NumberPlate ${carNumber}`
-console.log(myCar,typeof(myCar));
+console.log(myCar,typeof(myCar)); //i have A car With NumberPlate 777 "string"
 
 // In this example, the number 777 is implicitly coerced into a string when it's concatenated with another string. 
 // JavaScript automatically converts the number to a string to perform the concatenation operation.
