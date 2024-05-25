@@ -68,4 +68,11 @@ for (const key in language) {
     console.log(key,language[key]);  //  js cpp rb swift
  }
 
- 
+ let myNumber = [10,50,20,60]
+
+ for (const key in object) {
+    if (Object.hasOwnProperty.call(object, key)) {
+        const element = object[key];
+        
+    }
+ }
