@@ -23,8 +23,7 @@ console.log("OUTER let 'a' " ,a)  // script.js:237 Uncaught ReferenceError: a is
 // console.log(b)  // 20
 // console.table(cc)  //  Uncaught ReferenceError: cc is not defined
 
-<<<<<<< HEAD
-*****************
+// ++++++++==
 
    function call (){
     console.log(this);
@@ -47,7 +46,7 @@ function Fun(){
     console.log(this);
 }
 Fun()
-=======
+
 
 // ******NESTED SCOPE / closure ******************
 // Child function can Access the Properties / values of the Parent function is closure
@@ -100,4 +99,4 @@ const addTwo = function(num){
 }
 
 console.log(addTwo(5));
->>>>>>> 7b628a3 (Scope)
+//7b628a3 (Scope)
