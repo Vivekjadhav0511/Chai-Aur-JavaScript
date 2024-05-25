@@ -70,3 +70,4 @@ console.log(newDate.toLocaleDateString()); // 5/12/2024
 console.log(newDate.toLocaleString("defalut", {
     weekday : "short"
 })); // 5/12/2024, 4:44:55 PM
+
