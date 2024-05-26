@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element </title>
+</head>
+<body>
+    
+<script>
+       
+       let Element1 = document.createElement('div')
+       Element1.innerHTML = "Element 1"
+       Element1.className = "ClassName"
+       Element1.id = "ID"
+       Element1.setAttribute("title","ChaiAurCode")
+       Element1.style.color="Blue"
+    //    document.body.append(Element1)
+       console.log(Element1);
+
+       let TextNode =document.createTextNode("Text Node")
+       Element1.appendChild(TextNode)
+       
+       document.body.appendChild(TextNode)
+
+       let br = document.createElement("br")
+       document.body.append(br)
+
+
+       let Arrow = (property)=>{
+            let Element2 = document.createElement("h2")
+            let textNode = document.createTextNode(property)
+            console.log(Element2);
+            Element2.appendChild(textNode)
+            document.body.append(textNode)
+            console.log(textNode);
+            let br = document.createElement("br")
+            document.body.append(br)
+
+        }
+        Arrow("Chai Aur Code")
+        Arrow("Element With Arrow Function 1")
+        Arrow("Element With Arrow Function 2")
+        Arrow("Element With Arrow Function 3")
+
+</script>
+</body>
+</html>
