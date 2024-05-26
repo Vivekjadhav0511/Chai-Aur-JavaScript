@@ -46,3 +46,7 @@ querySelectorAllItem.forEach((item , index)=>{
 
 
 
+
+
+
+
