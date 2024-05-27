@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+
+
+    <script>
+
+          let parentUl = document.querySelector(".language")
+          
+          let addListItem = (list)=>{
+               let CreateNewLi = document.createElement("li")
+               CreateNewLi.innerHTML=list
+               parentUl.appendChild(CreateNewLi)
+          }
+          addListItem("Python")
+          addListItem("HTML")
+
+
+          let addCoptiLanguage = (langName)=>{
+              let CreateNewLi = document.createElement("li")
+              CreateNewLi.appendChild(document.createTextNode(langName))
+              parentUl.appendChild(CreateNewLi)
+          }
+
+          addCoptiLanguage("Optimize Way")
+
+
+        //   === Edit Value============
+
+      let fisrtLanguage = parentUl.firstElementChild
+      let newLi = document.createElement('li')
+      newLi.textContent="Edited Li TypeScript"
+      fisrtLanguage.replaceWith(newLi)
+        
+      let secondList = document.querySelector("li:nth-child(2)")
+      let newLi2 = document.createElement('li') 
+      newLi2.textContent="Second Li MOJO"
+      secondList.replaceWith(newLi2)
+
+
+
+    </script>
+
+</body>
+</html>  
