@@ -46,7 +46,15 @@
       newLi2.textContent="Second Li MOJO"
       secondList.replaceWith(newLi2)
 
+// +++++ Remove ++++++++++++++++
 
+      let lastLang = parentUl.lastElementChild
+      lastLang.remove()
+
+//   +++++ OUTER HTML++++++++++++
+
+let thirdElement = document.querySelector("li:nth-child(3)")
+thirdElement.outerHTML="<li> outerHTML</li> "
 
     </script>
 
