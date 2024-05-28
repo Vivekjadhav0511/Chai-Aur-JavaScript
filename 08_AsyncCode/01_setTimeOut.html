@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut</title>
+</head>
+<body>
+    
+    <h1>JavaScript Learning</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+        // +++++++++ setTimeout ++++++++++
+
+        let ClearVivek=setTimeout(function(){
+            console.log("Aysnc vivek");
+        },2000)
+
+
+        let sayVivek=function(){
+            // console.log("Async Vivek"); // pass The Referace Of The variable 
+        }
+        setTimeout(sayVivek, 2000);
+
+
+       let ChangeText = function(){
+        document.querySelector('h1').innerHTML="Text has Been Changed Boomm 😁"
+        setTimeout(function(){
+            // alert("Bampar Offer 50% Discount On Shopping 🎊🎁")
+        },1000)
+       }
+        // setTimeout(ChangeText,3000)
+
+        
+ // ++++++++ clearTimeout +++++++++++++
+
+       let Clear= setTimeout(ChangeText,3000)
+
+      let Stop= document.getElementById('stop')
+       
+       Stop.addEventListener('click',function(){
+        clearTimeout(Clear)
+        console.log("STOPPED ❌");
+       })
+
+        setInterval(function(){
+        //   console.log("vivek");
+        },2000)
+
+        Stop.addEventListener('click',()=>{
+            clearTimeout(ClearVivek)
+        })
+
+
+      
+    </script>
+</body>
+</html>
