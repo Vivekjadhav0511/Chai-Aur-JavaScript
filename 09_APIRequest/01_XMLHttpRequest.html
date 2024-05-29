@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+     let requestUrl = "https://api.github.com/users/Vivekjadhav0511"
+     let XHR= new XMLHttpRequest() 
+     XHR.open("GET",requestUrl)
+    XHR.onreadystatechange = function(){
+        console.log(XHR.readyState);
+        if (XHR.readyState===4) {
+          let data= JSON.parse(this.responseText)
+          console.log(data);
+        }
+    }
+     XHR.send()
+
+    </script>
+</body>
+</html>
