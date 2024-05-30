@@ -1,3 +1,9 @@
+// fetch is modern javascript api to handle network request 
+// fecth return a promise
+// if promis get resolved is return a response obejct 
+// response object gives a information about a rsponse & also a method to read data E.g (json , .text)
+// to handle promise we have a ".then()" & if promis get rejected we having ".catch()" to handle error 
+
 setTimeout(()=>{
     console.log("setTimeOUt");
 },0)
@@ -10,7 +16,7 @@ new Promise((res,rej)=>{
     }
 }).then((data)=>{
     // console.log("thennnn");
-    console.log(data);
+    console.log(data.statustext,data);
 let result = data.json()
 console.log(result);
 return result
@@ -32,7 +38,7 @@ let movie={
 console.log(movie.arroww());
 
 fetch("https://api.github.com/users/Vivekjadhav0511",{movie})
-.then((res,moviee)=>{
+.then((res)=>{
     console.log(res,movie);
     let inJson=res.json()
     return inJson
