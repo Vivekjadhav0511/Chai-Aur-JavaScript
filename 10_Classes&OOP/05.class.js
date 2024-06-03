@@ -3,9 +3,10 @@
 
 class user{
     constructor(userName,email,password){
-        this.userName=userName
-        this.email = email
+        this.userName=userName,
+        this.email = email,
         this.password = password
+        
     }
 
     encryptPassword(){
@@ -17,11 +18,11 @@ class user{
     }
 }
 
-let chai = new user("vivek Jadhav","vivel@gamil.com",446464463)
+let studentOne = new user("vivek Jadhav","vivel@gamil.com",446464463)
 
-// console.log(chai);
-console.log(chai.encryptPassword());
-console.log(chai.changeUserName());
+// console.log(studentOne);
+console.log(studentOne.encryptPassword());
+console.log(studentOne.changeUserName());
 
 // ++++++++ behind the Scene +++++++++++++++
 
