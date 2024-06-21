@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/W5gpPnIqOVi
+-->
+
+    <div id="container"  class="w-full h-full flex justify-center align-middle my-24 overflow-hidden	" >
+        <div class="mx-auto max-w-md space-y-6 border-2 border-black p-6">
+            <div class="space-y-2 text-center">
+                <h2 class="text-3xl font-bold">Get in Touch</h2>
+                <p class="text-muted-foreground">Have a question or want to work together? Fill out the form below.</p>
+            </div>
+            <form class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="name">
+                            Name
+                        </label>
+                        <input
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="name" placeholder="Your name"  onkeyup="validateName()" />
+                           <span id="nameError" class="text-xs font-semibold tracking-wider text-red-700"></span>  <!-- Please Enter a Full Name -->
+                    </div>
+                    <div class="space-y-2">
+                        <label
+                            class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                            for="email">
+                            Email
+                        </label>
+                        <input
+                            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                            id="email" placeholder="you@example.com"  type="text" onkeyup="EmailValidate()" />
+                         <span id="emailError" class="text-xs font-semibold tracking-wider text-red-700"></span>  <!--    Please Enter a Valid Email -->
+
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label
+                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        for="message">
+                        Message
+                    </label>
+                    <textarea
+                        class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 min-h-[120px]"
+                        id="message" placeholder="Write your message..." onkeyup="MessageValidate()"></textarea>
+                        <span id="messageError" class="text-xs font-semibold tracking-wider text-red-700"></span>
+
+                </div>
+                <button
+                    class="inline-flex text-white items-center bg-black justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                    type="submit" >
+                    Submit
+                </button>
+                <span id="submitError" class="text-xs font-semibold tracking-wider text-red-700"></span>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
