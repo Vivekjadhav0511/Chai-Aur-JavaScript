@@ -1,2 +1,4 @@
-# ChaiOrCode
-JavaScript Basics
+
+
+ Tailwind CDN :- <script src= "https://cdn.tailwindcss.com"></script>
+ 

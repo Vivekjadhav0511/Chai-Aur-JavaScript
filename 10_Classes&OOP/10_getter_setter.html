@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+// +++++++++ class based gette setter ++++++++++++++++++
+        
+class User{
+    constructor(username,email,password){
+        this.username=username,
+        this.email=email
+        this.password=password
+    }
+    callUserName(){
+        console.log(this.username);
+    }
+
+    get password(){
+         return `${this._password.toUpperCase()} Getter`  // if we define getter along with we have to define setter 
+    }                                      // => LOWER CASE SET GET Getter
+
+    set password(value){
+         this._password = value  // RangeError: Maximum call stack size exceeded
+    }
+}
+
+let userOne=new User("vivek jadhav","gmail.com","lower Case Set Get")
+
+console.log(userOne);
+userOne.callUserName();
+console.log(userOne.password); // Cannot set property password of #<User> which has only a getter
+                              // LOWER CASE SET GET Getter
+
+
+// ++++++++++ function based setter getter ++++++++++++++++++++++
+
+function Student(email,password ){
+       this._email=email
+       this._password=password
+
+       Object.defineProperty(this,'password',{
+        get:function(){
+           return `${this._password.toUpperCase()} chai`
+        },
+        set:function(value){
+            this._password =value
+        }   
+       })
+}
+
+let Studentone= new Student("gmail.com","pass@123")
+
+console.log(Studentone.password);
+
+
+// ++++++++++++ Object based getter setter +++++++++++++++
+
+let obj = {
+    _email:"email@gmail.com",
+    _password:"password",
+
+    get email(){
+    return `${this._email=""}`
+    },
+
+    set email(val){
+       this._email=val
+    }
+}
+
+const obj1=Object.create(obj)
+
+console.log(obj1.email);
+
+    </script>
+</body>
+</html>
