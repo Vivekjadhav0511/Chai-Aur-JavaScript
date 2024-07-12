@@ -1,5 +1,12 @@
 
+
 // ++++ HIGHER ORDER FUNCTION +++++++++
+
+
+// const { default: axios } = require("axios");
+
+
+
 
 // HIGHER ORDER FUNCTION IS FUNCTION WHICH ACCEPT A FUNCTION IN A PARAMETER OR RETURN 
 //  A FUNCTION OR BOTH 
@@ -134,13 +141,12 @@ Without a comparison function, the sort method in JavaScript converts
 
  */
 
+
 let sortArray = arrr.sort((a ,b)=>{
     return a-b
 })
 
 console.log("sort Array" , sortArray );
-
-
 
 
 
@@ -164,3 +170,47 @@ function removeDuplicates(arrr){
 }
 
 console.log(removeDuplicates(arrr));
+
+
+
+let url = 'https://api.github.com/users/Vivekjadhav0511'
+
+
+// async function fetchAPI(){
+// axios.get('https://api.github.com/users/mapbox')
+// .then((response) => {
+//   console.log(response.data);
+//   console.log(response.status);
+//   console.log(response.statusText);
+//   console.log(response.headers);
+//   console.log(response.config);
+// });
+// }
+
+
+
+async function getAPI(){
+   try {
+    let fetchurl = await fetch(url)
+    // console.log(fetchurl);
+    let response = await fetchurl.json()
+    console.log(response);
+   } catch (error) {
+    console.error(error)
+   }
+}
+
+getAPI()
+
+
+
+async function getAPIAxios(){
+    let fetchurl = await axios.get(url)
+    console.log(fetchurl);
+    let response = await fetchurl.json()
+    console.log(response);
+}
+
+getAPIAxios()
+
+    
