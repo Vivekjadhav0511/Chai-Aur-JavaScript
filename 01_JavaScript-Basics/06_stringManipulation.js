@@ -81,7 +81,7 @@ let trimExample = "    TrimKaro   "
 
 console.log(trimExample.trim());
 
-console.log(FullName.split("")); // Split The string Into A SubString And  Return INto A Array /* ['V', 'i', 'v', 'e', 'k', ' ', 'M', 'a', 'n', 'o', 'j', ' ', 'J', 'a', 'd', 'h', 'a', 'v'] */ 
+console.log(FullName.split(" ")); // Split The string Into A SubString And  Return INto A Array /* ['V', 'i', 'v', 'e', 'k', ' ', 'M', 'a', 'n', 'o', 'j', ' ', 'J', 'a', 'd', 'h', 'a', 'v'] */ 
 
 console.log(FullName.charAt(5)); // Return The Character presnt At The Given index Value 
 
