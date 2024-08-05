@@ -68,5 +68,5 @@ let arr = [1,1,5,5,8,88,77,77,66,77]
 
 let newArray = [...new Set(arr)]
 
-// console.log(newArray);
+console.log(newArray);
 
